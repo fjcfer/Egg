@@ -21,9 +21,26 @@ public class Ejercicio11 {
          Scanner leer = new Scanner(System.in);
          
      }
-   public static String palabras( String frase);
+   public static char palabras(frase);
    
-     
+      switch (frase){
+        case 'a':
+            = '@';
+            break;
+        case 'e':
+            = '#';
+            break;
+        case 'i':
+            = '$';   
+            break;
+        case 'o':
+            = '%';
+            break;
+        case 'u':
+            = '*';
+        default: 
+            System.out.println("No existe un valor válido para el tipo de bomba");
+           break;  
      
      
 }
