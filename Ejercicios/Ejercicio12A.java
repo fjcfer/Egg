@@ -13,7 +13,26 @@ siguientes funciones de Java Substring(), Length(), equals().
 import java.util.Scanner;
 public class Ejercicio12A {
   public static void main(String[] args) {
-		Scanner leer = new Scanner(System.in);  
+    Scanner leer = new Scanner(System.in);  
                 
-}
+      System.out.print("Ingrese cadena ");
+      System.out.print("(tienen que tener como máximo 5 caracteres y ");
+      System.out.println("el primer carácter tiene que ser  X y el último tiene que ser una O.");
+      String cadena = leer.nextLine();
+      int correctas = 0;
+      int incorrectas  = 0;
+      String FDE = "&&&&&";
+      while (!cadena.equals(FDE)){
+          if (cadena.substring(0,1).equalsIgnoreCase("X") && cadena.length()==5 && cadena.substring(4, 5).equalsIgnoreCase("O") ){
+              correctas++; // correctas = correctas + 1
+          } else {
+              incorrectas++;
+          }
+          System.out.println("Ingrese una cadena correcta");
+          cadena = leer.nextLine();
+      }
+      System.out.println("Palabras correctas: " + correctas); 
+      System.out.println("Palabras incorrectas: " + incorrectas);
+  }
+  
 }
