@@ -13,7 +13,7 @@ public class Ejercicio8A {
          Scanner leer = new Scanner(System.in); 
          
         System.out.println("Ingrese frase o palabra menor a 8 caracteres");
-         String frase = leer.next();
+         String frase = leer.nextLine();
         if (frase.length() <= 8){
             System.out.println("Correcto");
         }else {

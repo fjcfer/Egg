@@ -33,6 +33,5 @@ public class Ejercicio12A {
       }
       System.out.println("Palabras correctas: " + correctas); 
       System.out.println("Palabras incorrectas: " + incorrectas);
-  }
-  
+  }  
 }

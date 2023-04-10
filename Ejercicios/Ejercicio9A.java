@@ -37,12 +37,11 @@ public class Ejercicio9A {
 		Scanner leer = new Scanner(System.in);
 		
 		System.out.println("Introduzca una frase o palabra que comience con una A");
+                String frase = leer.nextLine();
 		
-		String pof = leer.nextLine();
-		
-		if ((pof.substring(0, 1)).equals("A")) {
+		if (frase.substring(0, 1).equals("A")) {
 			System.out.println("CORRECTO");
-		} else if ((pof.substring(0, 1)).equals("a")) {
+		} else if ((frase.substring(0, 1)).equals("a")) {
 			System.out.println("CORRECTO pero tenia que ser en mayuscula compiiii");
 		} else {
 			System.out.println("INCORRECTO");
